@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <form>
+        <legend> Caculator</legend>
+        
+            
+            
+            <input type="number" id="a">
+            <input type="number" id="b">
+            <br>
+            
+
+                <button type="button" onclick="Addition()">Addition(+)</button>
+                <button type="button" onclick="Subtraction()">Subtraction(-)</button>
+                 <button type="button" onclick="Multiplication()">Multiplication(X)</button>
+                 <button type="button" onclick="Division()">Division(/)</button>
+     </form>
+     <div id='ketqua'> </div>
+<script>
+    function Addition(){
+        let a=parseInt(document.getElementById("a").value);
+        let b=parseInt(document.getElementById("b").value);
+        
+        (document.getElementById('ketqua').innerHTML=a+b);
+    }
+    function Subtraction(){
+        let a=parseInt(document.getElementById("a").value);
+        let b=parseInt(document.getElementById("b").value);
+        
+        (document.getElementById('ketqua').innerHTML=a-b);
+    }function Multiplication(){
+        let a=parseInt(document.getElementById("a").value);
+        let b=parseInt(document.getElementById("b").value);
+        
+        (document.getElementById('ketqua').innerHTML=a*b);
+    }function Division(){
+        let a=parseInt(document.getElementById("a").value);
+        let b=parseInt(document.getElementById("b").value);
+        
+        (document.getElementById('ketqua').innerHTML=a/b);
+    }
+
+
+    
+</script>
+</body>
+</html> 
