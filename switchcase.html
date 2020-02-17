@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> số ngày trong tháng</title>
+</head>
+<body>
+    <input type="number" id="a" min="1" max="12">
+    <button type="button" onclick="tinhsongay()">Tính số ngày</button>
+    <div id="kq"></div>
+    <script>
+function tinhsongay() {
+    let month=parseInt(document.getElementById("a").value);
+    switch(month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            document.getElementById("kq").innerHTML= ("tháng có 31 ngày");
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            document.getElementById("kq").innerHTML= ("tháng có 30 ngày");
+            break;
+        case 2:
+            document.getElementById("kq").innerHTML=("tháng có 28 hoặc 29 ngày");
+            break;
+        default:
+            document.getElementById("kq").innerHTML=("error");
+    }
+}
+</script>
+</body>
+</html>
