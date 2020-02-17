@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cước điên thoại</title>
+</head>
+<body>
+    <script>
+        let min=+prompt(" nhập số phút gọi:");
+        if (min<= 50){
+            alert("tiền cước: "+(min*600+25000)+"VND")
+        }else if(min<= 150){
+            alert("tiền cước: "+((25000+ 50*600)+ (min-50)*400)+"VND")
+
+        }else if  (min>= 200){
+            alert("tiền cước: "+ (25000+ min*200 )+"VND")
+        }
+    </script>
+</body>
+</html>

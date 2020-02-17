@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xếp loại học sinh</title>
+</head>
+<body>
+    <p>
+    Xếp loại học sinh dựa vào điểm trung bình của điểm
+    </p>
+    <table>
+        <tr>
+            <td>Điểm kiểm tra miệng, 15p</td>
+            <td> <input type="number" id="a"></td>   
+        </tr>
+        <tr> <td>Điểm kiểm tra 1 tiết, giữa kì</td>
+            <td> <input type="number" id="b"></td>
+         <tr>
+            <td>Điểm thi cuối kì</td>
+             <td> <input type="number" id= "c"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="kiemtra()"> xếp loại</button>
+    <div id="kq"></div>
+<script>
+    function kiemtra(){
+        let  hs1=+document.getElementById("a").value;
+        let  hs2=+document.getElementById("b").value;
+        let  hs3=+document.getElementById("c").value;
+        let dtb=((hs1 + hs2*2 + hs3*3)/6);
+
+        if( dtb >= 9){
+            document.getElementById("kq").innerHTML=(" Xếp loại xuất sắc");
+        }else if(dtb>=8){
+            document.getElementById("kq").innerHTML=(" Xếp loại giỏi");
+        }else if( dtb>= 7){
+            document.getElementById("kq").innerHTML=(" Xếp loại khá");
+        }else if(dtb>=5){
+            document.getElementById("kq").innerHTML=(" Xếp loại trung bình");
+        }else{
+            document.getElementById("kq").innerHTML=(" Xếp loại yếu");
+
+        }
+
+
+    }
+</script>
+</body>
+</html>
