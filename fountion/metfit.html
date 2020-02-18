@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>đổi mét fit</title>
+</head>
+<body>
+    <h2> Chuyển đổi đơn vị độ dài</h2>
+    <table>
+        <tr>
+            <td> Giá trị</td>
+            <td> Từ đơn vị</td>
+            <td> Sang đơn vị</td>
+        </tr>
+        <tr>
+            <td> <input type="number" oninput="changetoFeet()" id="value"></td>
+            <td><select name="" id="x">
+                <option >met</option>
+                <option >feet</option>
+            </select>
+            </td>
+            <td><select name="" id="y">
+                <option >feet</option>
+                <option >met</option>
+            </select>
+            </td>
+        </tr>
+    </table>
+    <div id= "kq"></div>
+     <script>
+         
+         function changetoFeet(){
+            let a= +(document.getElementById("value").value);
+            let x= document.getElementById("x").value;
+            let y=document.getElementById("y").value;
+            if(x=="met"&& y=="feet"){
+                document.getElementById("kq").innerHTML=( a*3.279)+"feet";
+            }else if(x=="feet"&& y=="met"){
+                 document.getElementById("kq").innerHTML= (a*0.305)+"met";
+            }
+         
+           
+        }
+        
+     </script>
+</body>
+</html>

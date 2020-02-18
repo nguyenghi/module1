@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chuyển nhiệt độ</title>
+</head>
+<body>
+    <h1> Temperature Converter</h1>
+    <p>Type a value in the Fahrenhieit field to convert the value to Celcius </p>
+    <table>
+        <tr>
+            <td> Fahrenhieit</td>
+            <td><input type="number" id="f"></td>
+        </tr>
+        <tr>
+            <td>Celcius</td>
+            <td ><div id ="c"></div></td>
+        </tr>
+    </table>
+    <input type="button" onclick="convert()" value="Convert"
+    oninput="">
+    <script>
+       
+        function convert(){
+            let f= parseFloat(document.getElementById("f").value);
+            let  c= (f-32)/1.8;
+            document.getElementById("c").innerHTML=c;
+        }
+        
+    </script>
+</body>
+</html>
