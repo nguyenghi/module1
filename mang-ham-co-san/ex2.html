@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>số chẵn</title>
+</head>
+<body>
+    <script>
+        let num= prompt("nhập dãy số");
+        let str= num.toString();
+        let result=[str[0]];
+        for(let i=0; i<str.length;i++){
+            if(str[i]%2==0 && str[i-1]%2 == 0){
+                result.push ("-",str[i]);
+
+            }
+            else{
+                result.push(str[i]);
+
+            }
+
+        }
+        console.log(result.join(""));
+    </script>
+</body>
+</html>
