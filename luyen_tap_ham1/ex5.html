@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ngôi sao</title>
+</head>
+<body>
+    <script>
+        let star1 = new Array('Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair','Dubhe','Regulus');
+        let star2 = new Array('UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor','Leo');
+        
+        
+        function findStar(star) {
+            for (i = 0; i< star.length; i++){
+                if (starx == star1[i])
+                return i;
+            }            
+            return false;                   
+        }
+        let starx=prompt("Nhập tên ngôi sao: ");
+        if (findStar(starx) == false) {
+            alert("Không có ngôi sao nào");
+        } else {
+            alert("Tên chòm sao: " + star2[i]);
+        }
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> nhập giá trị đối số</h3>
+    <input type=number id="a">
+    <button type="button" value="tangGiatri()"></button>
+    <div id="kq"></div>
+    <script>
+    function tangGiatri(){
+        let n= document.getElementById("a").value;
+        document.getElementById("kq").innerHTML=("giá tri sau tăng là: "+(n+1))
+
+    }
+    
+    </script>
+</body>
+</html>
