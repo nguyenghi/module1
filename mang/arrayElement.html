@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Sample Screen</h1>
+    <form>
+        <input type="text">
+        <input type="button" value="Add" id="add" onclick="Add()">
+        <input type="button" value="Display" id="dis" onclick="Display()">
+
+    </form>
+    <hr>
+    <p id="kq"></p>
+    <script>
+        let x= 0;
+        let a= Array();
+      function Add(){
+          a[x]= document.getElementById("add").value;
+          alert("Element: "+ a[x]+ 'add '+ x);
+          x++;
+        document.getElementById("add").value="";
+        }
+       function Display(){
+           let e= "<hr/>";
+           for( let i=0;i<a.length;i++){ 
+               e=e+"Element "+i+"="+ a[i]+"<br/>"
+           }
+           document.getElementById("kq").innerHTML= e
+        
+       } 
+      
+    </script>
+    
+
+</body>
+</html>

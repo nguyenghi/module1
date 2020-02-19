@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> từ điển</title>
+</head>
+<body>
+    <form action="">
+        <legend>Dictionary</legend>
+        <table>
+            <tr>
+                <td>Tiếng Anh</td>
+                <td>Tiếng Việt</td>
+            </tr>
+            <tr>
+                <td ><input type="text" id="tk"></td>
+                <td id="kq"></td>
+            </tr>
+
+        </table>
+        <button type="button" value="Translate" onclick="Translate()">Translate</button>
+    <script>
+        let e= new Array("red","blue","pink","violet","black","white");
+        let v= new Array("đỏ","xanh","hồng","tím","đen","trắng");
+        // tìm kiếm
+        function Translate(){
+            let a= document.getElementById("tk").value;
+            for(let i=0; i<e.length; i++ ){
+                if(a ==e[i]){
+                    
+                    document.getElementById("kq").innerHTML=v[i];
+                    break;
+                }
+
+            }
+
+        }
+    </script>
+
+    </form>
+</body>
+</html>
