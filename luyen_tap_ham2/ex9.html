@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Kiểm tra kí tự</h3>
+    <table>
+        <tr>
+            <td> nhập chuỗi kí tự</td>
+            <td> <input type="text" id="a"></td>
+        </tr>
+        <tr>
+            <td> nhập một kí tự</td>
+            <td> <input type="text" id='b'></td>
+        </tr>
+    </table>
+    <button type="button" onclick="checkString()"> Check</button>
+    <div id="kq"></div>
+    <script>
+        function checkString() {
+            let char = document.getElementById("b").value;
+            let string = document.getElementById("a").value;
+            let count = 0;
+            for (let i = 0; i < string.length; i++) {
+                if (char == string[i]) {
+                    count++;
+                }
+            }
+            if (count != 0) {
+                document.getElementById("kq").innerHTML =
+                ("số lần xuất hiện kí tự trong mảng: " + count);
+
+            } else {
+                document.getElementById("kq").innerHTML = ("không tìm thấy kí tự");
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+               
+        function isMin(a,b,c){
+          
+            let min=a;
+            if(a>b){
+                min= b;
+            } else if(a>c){
+                min= c
+            }
+            return min;
+
+        }
+        
+        alert(isMin(
+            +prompt("nhập a"),
+            +prompt("nhập b"),
+            +prompt("nhập c")
+            )
+            +" là số nhỏ nhất"
+        )
+
+    </script>
+</body>
+</html>

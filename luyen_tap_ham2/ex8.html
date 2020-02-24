@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function addElement(number) {
+            let arr = [];
+            for (let i = 0; i < number; i++) {
+                arr[i] = Math.floor(Math.random() * 10);
+            }
+            return arr;
+        }
+
+
+        let number = +prompt('nhập số phần tử muốn khởi tạo')
+        let array = addElement(number)
+
+        document.write(array + "<br>");
+
+
+        function reverseArr(arr) {
+            document.write(arr.reverse());
+        }
+
+        reverseArr(array);
+
+
+    </script>
+
+
+</body>
+
+</html>
