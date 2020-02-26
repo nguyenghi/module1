@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let i = 0
+        let count = 0
+        let a = prompt('Nhập vào 1 câu bất kì')
+        
+        for (i; i < a.length; i++) {
+            if (a[i] == " ") {
+                count++
+            }
+        }
+        document.write('Trong mảng  có số từ là ' + (count + 1))
+    </script>
+
+</body>
+
+</html>
