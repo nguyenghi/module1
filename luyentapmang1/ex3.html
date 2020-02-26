@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+</head>
+<body>
+    <script>
+        let a= new Array(12,13,11,14,10,7,9,8,34,55);
+        let max= a[0];
+        let index= 0;
+        let sum=0;
+        for(let i=0;i<= a.length;i++){
+            if(a[i]>a[i-1]){
+                max= a[i];
+                sum=+a[i];
+                index= i;
+            }
+        }
+        document.write( "số lớn nhất:"+ max+"<br>")
+        document.write( "trung bình cộng của mảng: "+(sum/(index+1)))
+    </script>
+    
+</body>
+</html>
