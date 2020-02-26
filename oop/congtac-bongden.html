@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="switchButton.switchOnOff();">ONFF</button>
+    <img src="black.jpg" name='img' style="width: 400px; height: 300px;" alt="">
+    <script>
+        let SwitchButton = function(lamp){
+
+            this.lamp= lamp;
+    
+            this.switchOnOff= function(){
+                if(this.lamp.status==false){
+                    this.lamp.turnOn();
+                }
+                else{
+                    this.lamp.turnOff();
+                }
+            }
+        }
+        
+        let Eletriclamp= function(status){
+            this.status= status;
+            this.Eletriclamp= function(){
+            }
+            this.turnOn= function(){
+               this.status = true;
+               document.img.src = "images.jpg";
+            }
+            this.turnOff= function(){
+                this.status = false;
+                document.img.src = "black.jpg";
+}
+        }
+let eletriclamp = new Eletriclamp(false);
+let switchButton = new SwitchButton(eletriclamp);
+
+    </script>
+</body>
+</html>

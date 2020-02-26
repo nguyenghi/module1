@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+    <script>
+        let Rectagle = function (height, width) {
+            this.height = height;
+            this.width = width;
+            this.getHeight= function(){
+                return height;
+            }
+            this.getWidth= function(){
+                return width;
+            }
+            this.setHeight= function(height){
+                return this.height= height;
+            }
+            this.setWidth= function(width){
+                return this.width= width;
+            }
+            this.getArea = function () {
+                return height * width;
+            }
+            this.getPrimeter = function () {
+                return (height + width) * 2;
+            }
+            this.paintRec = function () {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillRect(0, 0, this.width, this.height);
+                ctx.stroke();
+            }
+        }
+        
+        let chunhat= new Rectagle(2,3);
+        chunhat.paintRec();
+
+        let width= +prompt("nhập chiều dài");
+        let height= +prompt("nhập chiều rộng");
+        let chunhat1 = new Rectagle(height,width);
+        chunhat1.paintRec();
+        let chuvi= chunhat1.getPrimeter();
+        let dientich = chunhat1.getArea();
+        document.write("chu vi "+chuvi+"<br>"+"diện tích "+ dientich);
+    </script>
+</body>
+
+</html>

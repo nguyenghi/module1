@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nhiệt độ</title>
+</head>
+<body>
+    <script>
+        function Temperature(celcius){
+            this.celcius= +30;
+            this.converseFa= function(celcius){
+                return (this.celcius*1.8)+32;
+            }
+            this.converseKen= function(celcius){
+                return (this.celcius + 273);
+            }
+            this.getCel= function(){
+                return celcius;
+            }
+            this.setCel=function(){
+                return this.celcius= celcius;
+
+            }
+            
+            
+            
+        }
+        let tem = new Temperature(25);
+        document.write("độ Fa "+ tem.converseFa()+"<br>"+" độ K "+ tem.converseKen())
+    </script>
+</body>
+</html>

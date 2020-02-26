@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Apple=function(weight){
+            this.weight = weight;
+            this.getWeight= function(){
+                return this.weight;
+            }
+            this.decreaseApple= function(){
+                if(weight> 0){
+                    weight--;
+                }
+            }
+            this.status= true;
+
+        } 
+        let Human = function (name, gender, weight){
+            this.name = name;
+            this.gender = Boolean;
+            this.weight = weight;
+            this.sayString = function(){
+                alert("My name "+ this.name+" my weight "+ this.weight);
+            };
+            this.checkApple= function(){
+                if(this.status){
+                    alert("Eat Apple");
+                }else{
+                    alert("Not eat Apple");
+                }
+            }
+            this.eatApple= function(){
+
+                this.weight++;
+            }
+            this.getName= function(){
+                return this.name ;
+            }
+            this.setName= function(){
+                return this.name= name;
+            }
+            this.getWeight= function(){
+                return this.weight;
+            }
+            this.setWeight = function(){
+                return this.weight =weight;
+            }
+
+        }
+        let apple = new Apple(10);
+        let Adam = new Human("Adam","Male",60);
+        Adam.sayString();
+        let Eva = new Human("Eva","Female",50);
+        Eva.sayString();
+        for(let i=0; i< apple.weight; i++){
+            if(i%2 ==0){
+                Adam.eatApple();
+                apple.decreaseApple();
+            }else {
+                Eva.eatApple();
+                apple.decreaseApple()
+            }
+        }
+        document.write("sau khi ăn táo cân nặng của Adam "+ Adam.getWeight()+"<br>");
+        document.write("sau khi ăn táo cân nặng của Eva "+ Eva.getWeight());
+
+    </script>
+</body>
+</html>
