@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isClassname(){
+            let str= prompt("nhập tên lớp");
+            regexp =/^[CAP]{1}[0-9]{4}[GHIKLM]{1}/;
+            if(regexp.test(str)){
+                alert("True");
+            
+            }else{
+                alert('Fasle');
+            }
+        }
+        isClassname();
+    </script>
+</body>
+</html>
