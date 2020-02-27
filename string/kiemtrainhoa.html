@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = prompt("nhập chuỗi");
+        
+        function isFirstLetterUpperCase(str) {
+            regexp = /^[A-Z]/;
+            if (regexp.test(str)) {
+               alert("String's first character is uppercase");
+            } else {
+               alert("String's first character is not uppercase");
+            }
+        }
+        isFirstLetterUpperCase(str)
+    </script>
+</body>
+
+</html>

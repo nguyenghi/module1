@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div> Email</div>
+    <input type="text" id="email">
+    <button type="button" onclick="isEmail()">Send</button>
+    <script>
+        function isEmail() {
+            let str = document.getElementById("email").value;
+            regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+            if (regexp.test(str)) {
+                alert("Email bạn đúng");
+            } else {
+                alert("Nhập lại mail của bạn");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

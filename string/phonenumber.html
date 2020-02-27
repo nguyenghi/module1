@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPhonenumber(){
+            let str= prompt("nhập số điện thoại");
+            regexp= /\([0-9]{2}\)\-\([0]{1}[0-9]{9}\)/;
+            if(regexp.test(str)){
+                alert("True");
+            }else{
+                alert("False");
+                
+            }
+            
+        }
+        isPhonenumber();
+    </script>
+</body>
+</html>
