@@ -1,0 +1,62 @@
+{ "books":[
+    
+    {
+        "id":1,
+        "bookName": "Để con được ốm",
+        "writer":"Nguyễn Trí Đoàn- Nhã Uyên",
+        "avatar":"img/Để-con-được-ốm.jpg",
+        "thePrice": "76.000Đ",
+        "introduce": "Để con được ốm cùng với những câu chuyện nhỏ thú vị của người mẹ là lời khuyên mang tính chuyên môn, giải đáp cụ thể từ bác sỹ Nguyễn Trí Đoàn, giúp hóa giải những hiểu lầm từ kinh nghiệm dân gian được truyền lại, cũng như lý giải một cách khoa học những thông tin chưa đúng đắn đang được lưu truyền hiện nay, mang đến góc nhìn đúng đắn nhất cho mỗi hiện tượng, sự việc với những kiến thức y khoa hiện đại được cập nhật liên tục." 
+
+    },
+    
+    {
+        "id":2,
+        "bookName": "Nuôi con không phải cuộc chiến",
+        "writer":"Bubu Huong- Hachun Lyonnet - Mẹ Ong Bông",
+        "avatar":"img/Nuôi-con-không-phải-là-cuộc-chiến-1.jpg",
+        "thePrice": "65.000Đ",
+        "introduce": "Nuôi con không phải là cuộc chiến mang lại cho độc giả cái nhìn chân thực và những kinh nghiệm quí báu trong việc nuôi dạy con của những bà mẹ trẻ. Cuốn sách giúp bạn hiểu thêm về chu kì sinh học của trẻ, cách cho trẻ ăn đúng cách lúc trẻ đói bụng, nắm bắt được tâm lí chung của con mình trong độ tuổi này"
+    },
+    {
+        "id":3,
+        "bookName": "Nuôi dạy một đứa trẻ hạnh phúc",
+        "writer":" Jessica Joelle Alexander - Iben Dissing Sandahl",
+        "avatar":"img/sach-nuoi-day-mot-dua-tre-hanh-phuc.jpg",
+        "thePrice": "80.000Đ",
+        "introduce":"Nuôi dạy một đứa trẻ hạnh phúc là cuốn cẩm nang dành cho cha mẹ đang có một trải nghiệm khó khăn, gian truân, nhưng cũng vui sướng và đầy viên mãn. Dù cho mọi người có đồng ý với mọi khía cạnh của kiểu Đan Mạch hay không, đây chắc chắn là một miếng trầu để mào đầu nhiều câu chuyện. Những ý tưởng này chính là hạt giống cho một phong trào đời thường và giúp nó phát triển thành những gì nó là ngày hôm nay."
+    },
+    {
+        "id":4,
+        "bookName": "Vô cùng tàn nhẫn vô cùng yêu thương",
+        "writer":" Jessica Joelle Alexander - Iben Dissing Sandahl",
+        "avatar":"img/Vô-cùng-tàn-nhẫn-vô-cùng-yêu-thương-1.jpg",
+        "thePrice": "120.000Đ",
+        "introduce":"Vô cùng tàn nhẫn vô cùng yêu thương của tác giả Sara là một cuốn sách giáo dục trẻ xuất sắc, đây là bí quyết dạy con của người Do Thái, những kinh nghiệm trong việc dạy con của chính tác giả vừa thú vị lại rất ý nghĩa, giúp phụ huynh đúc kết được nhiều kiến thức, lưu ý trong quá trình giáo dục con trẻ."
+    },
+    {
+        "id":5,
+        "bookName": "Ăn dặm kiểu nhật",
+        "writer":"Tsutsumi Chiharu",
+        "avatar":"img/Ăn-Dặm-Kiểu-Nhật-Tái-Bản-4.2018.jpg",
+        "thePrice": "149.000Đ",
+        "introduce":" Ăn Dặm Kiểu Nhật là một trong những cuốn cẩm nang tuyệt vời cùng với những công thức nấu ăn mà các mẹ có thể dễ dàng tự làm cho con nhưng không gây ra sự nhàm chán. Ngoài ra cuốn cẩm nang còn đưa ra chi tiết và cẩn thận những loại thực phẩm mà các mẹ nên cân nhắc khi cho trẻ ăn mỗi khi trẻ bị ốm hoặc dị ứng với thực phẩm."
+    },
+    {   "id":6,
+        "bookName": "Ai ở sau lưng bạn thế?",
+        "writer":" Accototo",
+        "avatar":"img/ai o sau lung ban the.jpg",
+        "thePrice": "209.000Đ",
+        "introduce":"Thế giới động vật vô cùng phong phú với các loài khác nhau. Các bé đã biết hết tên gọi và đặc điểm của từng con vật chưa ? Hãy cùng bố, mẹ khám phá trong cuốn sách “Ai ở sau lưng bạn thế?” . Bộ truyện “Ai ở sau lưng bạn thế?” sẽ gồm 6 cuốn về chủ đề các loài động vật khác nhau, chắc chắn sẽ đem lại cho các bé từ 0-3 tuổi những kiến thức mới , vô cùng bổ ích."
+    }
+      
+
+],
+"user":[
+    {
+        "id": "1",  
+        "email":"nguyenghi111@gmail.com",
+        "password":"hoatimuoi"
+    }
+]
+}
